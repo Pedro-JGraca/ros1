@@ -49,11 +49,15 @@ RUN apt-get install -y ros-noetic-actionlib ros-noetic-actionlib-msgs ros-noetic
 
 
 
+RUN apt-get install -y python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
 
+RUN apt-get install -y python3-rosdep
 
-RUN apt-get install -y ros-noetic-desktop-full
+RUN rosdep init
+RUN rosdep fix-permissions
+RUN rosdep update
+
 
 
 EXPOSE 80
 
-CMD ["bash"]
