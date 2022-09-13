@@ -57,6 +57,9 @@ RUN rosdep init
 RUN rosdep fix-permissions
 RUN rosdep update
 
+RUN apt-get install -y vim pip
+
+RUN apt-get install -y ros-noetic-tello-driver
 
 
 EXPOSE 80
