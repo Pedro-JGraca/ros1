@@ -1,2 +1,2 @@
-pkg-gracinha2:tello_driver
+tello_driver
 -DCATKIN_DEVEL_PREFIX=/home/volume/catkin_ws/devel -DCMAKE_INSTALL_PREFIX=/home/volume/catkin_ws/install -G Unix Makefiles

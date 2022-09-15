@@ -131,7 +131,7 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
   include("/home/volume/catkin_ws/build/gtest/cmake_install.cmake")
-  include("/home/volume/catkin_ws/build/pkg-gracinha2/cmake_install.cmake")
+  include("/home/volume/catkin_ws/build/tello_driver/cmake_install.cmake")
 
 endif()
 
