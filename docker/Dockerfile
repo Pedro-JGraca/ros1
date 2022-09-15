@@ -61,6 +61,12 @@ RUN apt-get install -y vim pip
 
 RUN apt-get install -y ros-noetic-tello-driver
 
+RUN mkdir -p /run/user/1000
+RUN chmod 0700 /run/user/1000
+
+
+RUN apt-get install -y ros-noetic-rqt
+RUN apt-get install -y ros-noetic-rqt-common-plugins
 
 EXPOSE 80
 
