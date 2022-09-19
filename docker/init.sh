@@ -1,6 +1,8 @@
-versao='ros2.0'
+versao='ros1.0'
 sudo docker build -t $versao .
-local=~/Documentos/ros1/
+
+local=$(pwd)
+local=${local:0:((${#local}-6))}
 
 xhost +local:docker
 
